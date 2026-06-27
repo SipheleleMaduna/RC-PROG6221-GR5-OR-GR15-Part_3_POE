@@ -1,0 +1,98 @@
+﻿<Window x:Class="POE_Part3.WindowGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE_Part3"
+        mc:Ignorable="d"
+        Title="WindowGame" Height="450" Width="800">
+    
+
+        <!-- Outer Pink Border -->
+        <Border Margin="20"
+            CornerRadius="10"
+            Background="DarkGray">
+
+            <Grid Background="#FFDEDBDB" Margin="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <TextBlock Grid.Row="0"
+                       Text="Quiz Game"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="Black"
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+
+                <!-- Quiz Area -->
+                <StackPanel Grid.Row="1"
+                        Margin="20">
+
+                    <!-- Score Board -->
+                    <Border Background="White"
+                        CornerRadius="10"
+                        Padding="10"
+                        Margin="0,0,0,20">
+                        <TextBlock x:Name="ScoreText"
+                               Text="{Binding ScoreString}"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Foreground="Green"/>
+                    </Border>
+
+                    <!-- Question -->
+                    <TextBlock x:Name="QuestionText"
+                           Text="{Binding Question}"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           TextWrapping="Wrap"
+                           Margin="0,0,0,20"/>
+
+                    <!-- Options -->
+                <RadioButton x:Name="rbOption1"
+             Content="{Binding Option1}"
+             GroupName="Answers"
+             IsChecked="{Binding SelectedOption1, Mode=TwoWay}" />
+
+                <RadioButton x:Name="rbOption2"
+             Content="{Binding Option2}"
+             GroupName="Answers"
+             IsChecked="{Binding SelectedOption2, Mode=TwoWay}" />
+
+                <RadioButton x:Name="rbOption3"
+             Content="{Binding Option3}"
+             GroupName="Answers"
+             IsChecked="{Binding SelectedOption3, Mode=TwoWay}" />
+
+                <RadioButton x:Name="rbOption4"
+             Content="{Binding Option4}"
+             GroupName="Answers"
+             IsChecked="{Binding SelectedOption4, Mode=TwoWay}" />
+
+            </StackPanel>
+
+                <!-- Submit Button -->
+                <Button Grid.Row="2"
+                    x:Name="SubmitButton"
+                    Content="Submit Answer"
+                    Width="180"
+                    Height="40"
+                    Margin="10"
+                    HorizontalAlignment="Center"
+                    Background="DarkGray"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    IsEnabled="{Binding IsSubmitEnabled}"
+                    Click="SubmitButton_Click"/>
+            <Button Content="Back" HorizontalAlignment="Left" Margin="677,21,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+        </Grid>
+        </Border>
+    </Window>
+

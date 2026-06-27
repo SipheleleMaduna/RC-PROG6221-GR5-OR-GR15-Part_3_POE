@@ -1,0 +1,10 @@
+C:\Users\Student\Desktop\POE_Part3\TaskChat\bin\Debug\TaskChat.dacpac
+C:\Users\Student\Desktop\POE_Part3\TaskChat\bin\Debug\TaskChat.dll
+C:\Users\Student\Desktop\POE_Part3\TaskChat\bin\Debug\TaskChat.pdb
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\TaskChat.sqlproj.AssemblyReference.cache
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\Model.xml
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\refactor.xml
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\postdeploy.sql
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\predeploy.sql
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\TaskChat.dll
+C:\Users\Student\Desktop\POE_Part3\TaskChat\obj\Debug\TaskChat.pdb
